@@ -17,7 +17,8 @@ RUN apt-get update && \
     apt-get install -y vim && \
     apt-get install -y openjdk-17-jdk && \
     apt-get install -y maven && \
-    # rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
+    
 USER jenkins
 
 COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
