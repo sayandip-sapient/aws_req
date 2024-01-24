@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  jenkins:
+    build: .   # This line tells Docker Compose to use the Dockerfile in the current directory
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    environment:
+      - JENKINS_ADMIN_ID=myadmin
+      - JENKINS_ADMIN_PASSWORD=mypassword
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  jenkins-data:
+
