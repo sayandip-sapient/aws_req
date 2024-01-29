@@ -66,6 +66,6 @@ if (Jenkins.instance.getItem(seedJobName) == null) {
     seedJob.save()
 
     // Trigger the seed job manually (optional)
-    seedJob.scheduleBuild2(0)
+    // seedJob.scheduleBuild2(0)
 }
      
