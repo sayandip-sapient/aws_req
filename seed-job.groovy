@@ -7,7 +7,7 @@ import hudson.model.TaskListener
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
 import org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty
 import org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject
-import org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition
+import org.jenkinsci.plugins.workflow.cps.CpsScmFlozzwDefinition
 
 String multibranchPipelineJobName = 'hirebuddy-multibranch-pipeline'
 String gitRepoUrl = 'https://github.com/sayandip-sapient/jenkins_proj.git'
